@@ -1,0 +1,53 @@
+!
+! general options
+!
+debug       = 0
+useEnv4Pass = 0
+! useCLI4Pass = 1
+! labelSep    = -
+bitmapDir   = C:/Users/ME/Documents/ckmail/s3/
+!
+! fork() does not work under Windows
+!
+! noFork      = 1
+!
+geometry    = -240+10
+passwdGeom  = +750+500
+!
+! checkTime is in minutes, typically ever 3 to 5 min
+!
+! checkTime   = 1
+checkTime   = 3
+! checkTime   = 5
+!
+!
+popUpWidth  = 105
+popUpLeft   = 1
+!
+soundFile   = C:/Users/ME/Documents/ckmail/attention.wav
+volume      = 100
+useSounds   = 0
+!
+! define all the mailboxes
+!
+{
+ name  = Work
+ mType = IMAPSSL
+ color = red
+ email = me@work.com
+ port  = 993
+ host  = imap.gmail.com
+ mDel  = 1
+! passwd = <blahblah>
+}
+!
+{
+ name  = Private
+ mType = IMAPSSL
+ color = blue 
+ email = me@gmail.com
+ port  = 993
+ host  = imap.gmail.com
+ mDel  = 1
+! passwd = <yoyoyo>
+}
